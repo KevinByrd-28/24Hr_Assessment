@@ -17,5 +17,6 @@ namespace _24_Hour_Assignment.Models
         public string Text { get; set; }
         public int UserNum { get; set; }
 
+
     }
 }
