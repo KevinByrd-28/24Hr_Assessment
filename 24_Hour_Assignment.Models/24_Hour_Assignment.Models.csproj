@@ -65,6 +65,10 @@
     <Compile Include="PostListItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReplyCreate.cs" />
+    <Compile Include="ReplyDetail.cs" />
+    <Compile Include="ReplyEdit.cs" />
+    <Compile Include="ReplyListItem.cs" />
     <Compile Include="UserCreate.cs" />
     <Compile Include="UserDetail.cs" />
     <Compile Include="UserEdit.cs" />
@@ -73,6 +77,12 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\24_Hour_Assignment.Data\24_Hour_Assignment.Data.csproj">
+      <Project>{B24050E0-FD8D-4065-9931-484EF5571C94}</Project>
+      <Name>24_Hour_Assignment.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

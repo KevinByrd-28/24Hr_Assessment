@@ -96,10 +96,6 @@
     <Compile Include="Migrations\202006012151513_InitialCreate.designer.cs">
       <DependentUpon>202006012151513_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202006020008526_migration1.cs" />
-    <Compile Include="Migrations\202006020008526_migration1.designer.cs">
-      <DependentUpon>202006020008526_migration1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\202006020051351_Migration2.cs" />
     <Compile Include="Migrations\202006020051351_Migration2.designer.cs">
       <DependentUpon>202006020051351_Migration2.cs</DependentUpon>
@@ -118,9 +114,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202006012151513_InitialCreate.resx">
       <DependentUpon>202006012151513_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202006020008526_migration1.resx">
-      <DependentUpon>202006020008526_migration1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006020051351_Migration2.resx">
       <DependentUpon>202006020051351_Migration2.cs</DependentUpon>
