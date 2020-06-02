@@ -15,6 +15,7 @@ namespace _24_Hour_Assignment.Models
         public string Title { get; set; }
         [MaxLength(8000)]
         public string Text { get; set; }
+        public int UserNum { get; set; }
 
     }
 }

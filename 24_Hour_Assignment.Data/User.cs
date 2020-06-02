@@ -10,11 +10,15 @@ namespace _24_Hour_Assignment.Data
     public class User
     {
         [Key]
+        public int UserNumber { get; set; }
+        [Required]
         public Guid UserID { get; set; }
         [Required]
         public string Name { get; set; }
         [Required]
         public string Email { get; set; }
+        
+        public virtual ICollection <Post> Posts { get; set; }
 
     }
 }

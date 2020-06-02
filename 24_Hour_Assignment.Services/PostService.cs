@@ -25,6 +25,9 @@ namespace _24_Hour_Assignment.Services
                     //Author = Guid.Parse(_userId),
                     Title = model.Title,
                     Text = model.Text,
+                    UserNum = model.UserNum,
+                    UserID = _userId,
+                    PostID = 1,
                 };
 
             using (var ctx = new ApplicationDbContext())
@@ -41,12 +44,12 @@ namespace _24_Hour_Assignment.Services
                 var query =
                     ctx
                         .Posts
-                        .Where(e => e.OwnerId == _userId)
+                        .Where(e => e.UserID == _userId)
                         .Select(
                             e =>
                                 new PostListItem
                                 {
-                                    PostId = e.PostId,
+                                    PostId = e.PostID,
                                     Title = e.Title,
                                 }
                         );
@@ -62,7 +65,7 @@ namespace _24_Hour_Assignment.Services
                 var entity =
                     ctx
                         .Posts
-                        .Single(e => e.PostID == id && e.OwnerId == _userId);
+                        .Single(e => e.PostID == id && e.UserID == _userId);
                 return
                     new PostDetail
                     {
@@ -80,11 +83,10 @@ namespace _24_Hour_Assignment.Services
                 var entity =
                     ctx
                         .Posts
-                        .Single(e => e.PostID == model.PostID && e.OwnerId == _userId);
+                        .Single(e => e.PostID == model.PostID && e.UserID == _userId);
 
                 entity.Title = model.Title;
                 entity.Text = model.Text;
-                entity.ModifiedUtc = DateTimeOffset.UtcNow;
 
                 return ctx.SaveChanges() == 1;
             }
@@ -97,7 +99,7 @@ namespace _24_Hour_Assignment.Services
                 var entity =
                     ctx
                         .Posts
-                        .Single(e => e.PostID == postId && e.OwnerId == _userId);
+                        .Single(e => e.PostID == postId && e.UserID == _userId);
 
                 ctx.Posts.Remove(entity);
 
