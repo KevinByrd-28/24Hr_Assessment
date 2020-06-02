@@ -24,7 +24,7 @@ namespace _24_Hour_Assignment.Data
         public string Title { get; set; }
 
         [Required]
-        [MaxLength(100, ErrorMessage = "There are too many characters in this field.")]
+        [MaxLength(1000, ErrorMessage = "There are too many characters in this field.")]
         public string Text { get; set; }
 
     }
