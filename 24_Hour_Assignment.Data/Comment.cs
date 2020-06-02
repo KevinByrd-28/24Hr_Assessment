@@ -11,6 +11,7 @@ namespace _24_Hour_Assignment.Data
     {
         [Key]
         public int CommentID { get; set; }
+
         [Required]
         public Guid UserID { get; set; }
         [Required]

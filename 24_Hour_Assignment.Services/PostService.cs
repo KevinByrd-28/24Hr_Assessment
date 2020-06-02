@@ -21,8 +21,6 @@ namespace _24_Hour_Assignment.Services
             var entity =
                 new Post()
                 {
-                    //Author = model.Author,
-                    //Author = Guid.Parse(_userId),
                     Title = model.Title,
                     Text = model.Text,
                     UserNum = model.UserNum,
