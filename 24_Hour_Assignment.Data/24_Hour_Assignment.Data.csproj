@@ -104,6 +104,10 @@
     <Compile Include="Migrations\202006020051351_Migration2.designer.cs">
       <DependentUpon>202006020051351_Migration2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006021347507_Post Fix.cs" />
+    <Compile Include="Migrations\202006021347507_Post Fix.designer.cs">
+      <DependentUpon>202006021347507_Post Fix.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Post.cs" />
     <Compile Include="Program.cs" />
@@ -124,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006020051351_Migration2.resx">
       <DependentUpon>202006020051351_Migration2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006021347507_Post Fix.resx">
+      <DependentUpon>202006021347507_Post Fix.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

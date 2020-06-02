@@ -10,7 +10,7 @@ namespace _24_Hour_Assignment.Data
     public class Comment
     {
         [Key]
-        public int CommentId { get; set; }
+        public int CommentID { get; set; }
         [Required]
         public User Author { get; set; }
         [Required]
